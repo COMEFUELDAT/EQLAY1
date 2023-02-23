@@ -241,7 +241,7 @@ EQLAY1AudioProcessor::createParameterLayout()
 
     layout.add(std::make_unique<juce::AudioParameterFloat>("Peak Freq",
                                                             "Peak Freq",
-        juce::NormalisableRange<float>(20.f, 20000.f, 1.f, 1.f), 750.f));
+        juce::NormalisableRange<float>(20.f, 20000.f, 1.f, 0.25f), 750.f));
 
     layout.add(std::make_unique<juce::AudioParameterFloat>("Peak Gain",
                                                             "Peak Gain",
